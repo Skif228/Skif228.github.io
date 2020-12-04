@@ -1,0 +1,145 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Арт. Клиник</title>
+<link rel="stylesheet" type="text/css" href="1.css">
+<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@400;900&display=swap" rel="stylesheet">
+</head>
+<script type="text/javascript">
+function validate();
+    //Считаем значения из полей name и email в переменные x и y
+    var x=document.forms["form"]["name"].value;
+    var y=document.forms["form"]["email"].value;
+    //Если поле name пустое выведем сообщение и предотвратим отправку формы
+    if (x.length==0) {
+document.getElementById("namef").innerHTML="*данное поле обязательно для заполнения";
+        return false;
+    }
+    //Если поле email пустое выведем сообщение и предотвратим отправку формы
+if (y.length==0) {
+document.getElementById("emailf").innerHTML="*данное поле обязательно для заполнения";
+    return false;
+}
+    //Проверим содержит ли значение введенное в поле email символы @ и .
+at =y.indexOf("@");
+dot =y.indexOf(".");
+//Если поле не содержит эти символы значение email введен неверно
+if (at<1 || dot<1) {
+document.getElementById("emailf").innerHTML="*email введен неверно";
+    return false;
+}
+</script>
+<script type="text/javascript">
+  function calc() {
+      var sum=0 
+      mas=[2990,690,798,1190,699,990,1190,190,900,1500,2990,298,355,400,190,699,990,211,190,520,500,1500]
+      if (document.getElementById("1").value!=0) {
+      sum+=parseInt(document.getElementById("1").value)*mas[0]}
+      if (document.getElementById("2").value!=0) {
+      sum+=parseInt(document.getElementById("2").value)*mas[1] }
+      if (document.getElementById("3").value!=0) {
+      sum+=parseInt(document.getElementById("3").value)*mas[2] }
+      if (document.getElementById("4").value!=0) {
+      sum+=parseInt(document.getElementById("4").value)*mas[3] }
+      if (document.getElementById("5").value!=0) {
+      sum+=parseInt(document.getElementById("5").value)*mas[4] }
+      if (document.getElementById("6").value!=0) {
+      sum+=parseInt(document.getElementById("6").value)*mas[5] }
+      if (document.getElementById("7").value!=0) {
+      sum+=parseInt(document.getElementById("7").value)*mas[6] }
+      if (document.getElementById("8").value!=0) {
+      sum+=parseInt(document.getElementById("8").value)*mas[7] }
+      if (document.getElementById("9").value!=0) {
+      sum+=parseInt(document.getElementById("9").value)*mas[8] }
+      if (document.getElementById("10").value!=0) {
+      sum+=parseInt(document.getElementById("10").value)*mas[21] }
+	  if (document.getElementById("21").value!=0) {
+      sum+=parseInt(document.getElementById("21").value)*mas[11] }
+	  if (document.getElementById("22").value!=0) {
+      sum+=parseInt(document.getElementById("22").value)*mas[12] }
+	  if (document.getElementById("23").value!=0) {
+      sum+=parseInt(document.getElementById("23").value)*mas[13] }
+	  if (document.getElementById("24").value!=0) {
+      sum+=parseInt(document.getElementById("24").value)*mas[14] }
+	  if (document.getElementById("25").value!=0) {
+      sum+=parseInt(document.getElementById("25").value)*mas[15] }
+	  if (document.getElementById("26").value!=0) {
+      sum+=parseInt(document.getElementById("26").value)*mas[16] }
+	  if (document.getElementById("27").value!=0) {
+      sum+=parseInt(document.getElementById("27").value)*mas[17] }
+	  if (document.getElementById("28").value!=0) {
+      sum+=parseInt(document.getElementById("28").value)*mas[18] }
+	  if (document.getElementById("29").value!=0) {
+      sum+=parseInt(document.getElementById("29").value)*mas[19] }
+	   if (document.getElementById("30").value!=0) {
+      sum+=parseInt(document.getElementById("30").value)*mas[20] }
+	
+	  
+	  
+   
+      document.getElementById("p").value=sum
+  }
+</script>
+
+<body>
+<body bgcolor="#00CED1"> 
+	<div id="main">
+        <div id="main-inner">
+          <div id="header">
+              <div id="logo">
+                <div class="logo">
+                  <a href="index.html"><img src="image/otzyvy-set-magazinov-incity-1377187899.png" width="500px" height="200px"></a>
+                </div>
+            </div>                        
+        </div>
+   </div>
+     
+
+<table top="100px" width="700px" bgcolor="white" cellspacing="5" cellpadding="10" border="0" align="right" >
+<caption>Ассортимент лекарств</caption>
+<tr>
+    <th>Название товара</th>    
+    <th>Изображение</th>
+    <th>Цена</th>
+    <th>Количество</th>
+</tr>
+    <tr><td>Аспирин-С</td><td><img src="image/1.png" width="300" alt="Аспирин-С"></td><td>2 990 руб.</td><td><input type="text" id="1"></td></tr>
+    <tr><td>Снуп</td><td><img src="image/2.png"  width="300" alt="платье Lamania"></td><td>690 руб.</td><td><input type="text" id="2"></td></tr>
+    <tr><td>Циклоферон</td><td><img src="image/3.png" width="300" alt="футболка Savage"></td><td>798 руб.</td><td><input type="text" id="3"></td></tr>
+    <tr><td>Мед. маска</td><td><img src="image/4.png" width="300" alt="футболка Taya"></td><td>1 190 руб.</td><td><input type="text" id="4"></td></tr>
+    <tr><td>Стиммунал</td><td><img src="image/5.png" width="300" alt="футболка Mango"></td><td>699 руб.</td><td><input type="text" id="5"></td></tr>
+    <tr><td>Ринза</td><td><img src="image/6.png" width="300" alt="шуба Muubaa"></td><td>990 руб.</td><td><input type="text" id="6"></td></tr>
+<tr><td>Максилак</td><td><img src="image/7.png" width="300" alt="туфли Dorothy Perkins"></td><td>1 190 руб.</td><td><input type="text" id="7"></td></tr>
+<tr><td>Витамин D</td><td><img src="image/8.png" width="300" alt="туфли Versache"></td><td>190 руб.</td><td><input type="text" id="8"></td></tr>
+<tr><td>Черника Форте</td><td><img src="image/9.png" width="300" alt="джинсы Diesel"></td><td>900 руб.</td><td><input type="text" id="9"></td></tr>
+<tr><td>Никоретте</td><td><img src="image/10.png" width="300" alt="джинсы Levi's® "></td><td>1 500 руб.</td><td><input type="text" id="10"></td></tr>
+</table> <BR/>
+
+
+
+<table class="tb" width="500px" bgcolor="white" cellspacing="5" cellpadding="10" border="0" align="left">
+    <caption>Ассортимент лекарств</caption>
+    <tr>
+        <th>Название товара</th>    
+        <th>Изображение</th>
+        <th>Цена</th>
+        <th>Количество</th>
+    </tr>
+        <tr><td>Имодиум</td><td><img src="image/11.png" width="300" alt="платье Kira Plastinina"></td><td>298 руб.</td><td><input type="text" id="21"></td></tr>
+        <tr><td>Пустырник</td><td><img src="image/12.jpg"  width="300" alt="платье Lamania"></td><td>355 руб.</td><td><input type="text" id="22"></td></tr>
+        <tr><td>Аскорбинка</td><td><img src="image/13.jpg" width="300" alt="футболка Savage"></td><td>400 руб.</td><td><input type="text" id="23"></td></tr>
+        <tr><td>Солодка</td><td><img src="image/14.png" width="300" alt="футболка Taya"></td><td>190 руб.</td><td><input type="text" id="24"></td></tr>
+        <tr><td>Шалфей</td><td><img src="image/15.png" width="300" alt="футболка Mango"></td><td>699 руб.</td><td><input type="text" id="25"></td></tr>
+        <tr><td>Ксилометозалин</td><td><img src="image/16.jpg" width="300" alt="шуба Muubaa"></td><td>990 руб.</td><td><input type="text" id="26"></td></tr>
+    <tr><td>Туфли Dorothy Perkins</td><td><img src="image/17.jpg" width="300" alt="туфли Dorothy Perkins"></td><td>211 руб.</td><td><input type="text" id="27"></td></tr>
+    <tr><td>Туфли Versache</td><td><img src="image/18.png" width="300" alt="туфли Versache"></td><td>190 руб.</td><td><input type="text" id="28"></td></tr>
+    <tr><td>Джинсы Diesel</td><td><img src="image/19.jpg" width="300" alt="джинсы Diesel"></td><td>520 руб.</td><td><input type="text" id="29"></td></tr>
+    <tr><td>Джинсы Levi's®</td><td><img src="image/20.jpg" width="300" alt="джинсы Levi's® "></td><td>500 руб.</td><td><input type="text" id="30"></td></tr>
+    </table> <BR/>
+     
+    <p align="center"><input type="button" id="b2" value="Заказать" onClick="newWin = window.open('form.html', 'newwin' )">
+    <input type="button" align="center" id="b1" value="Рассчитать" align='center' onClick="calc()">
+    <output type="text" id="p" value="" style="color:black;background-color:#eee;width:200px;height:100px;"></output></p>
+
+</body>
+</html>

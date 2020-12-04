@@ -1,0 +1,31 @@
+caption{
+    font-size: 25px;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+.t1 {
+    color: darkolivegreen;
+    font-family: 'Sansita Swashed', cursive;
+}
+.t2{
+    color: darkorange;
+}
+tr{
+    font-family: 'Sansita Swashed', cursive;
+}
+th{
+    font-family: 'Sansita Swashed', cursive;
+}
+
+button {
+    background:transparent;
+    border:none;
+    outline:none;
+    display:block;
+    height:200px;
+    width:200px;
+    cursor:pointer;
+}
+.tb{
+    top: 1000px;
+}
